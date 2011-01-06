@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="jThatzAt.js"></script>
+    </head>
+<body>
+
+    <p class="from_class">This date is transformed thanks to a jquery selector : <span class="thatzat">Sat 13:30 utc</span></p>
+    <p class="from_regex">This date is transformed thanks to a regex : Sat 13:30 utc</p>
+
+    <script type="text/javascript">
+
+        $('p.from_class').thatzAt ({
+            selector: '.thatzat'    
+        });
+
+        $('p.from_regex').thatzAt ({/* TODO */
+        });
+
+    </script>
+
+</body>
+</html>
